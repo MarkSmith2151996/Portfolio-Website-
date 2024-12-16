@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background: #f4f4f9;
+        }
+
+        header {
+            background: #007acc;
+            color: white;
+            padding: 1rem 2rem;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            margin-top: 0.5rem;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 2rem auto;
+            padding: 1rem;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .project {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .project-card {
+            flex: 1 1 calc(33.333% - 1rem);
+            min-width: 200px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            overflow: hidden;
+            transition: transform 0.2s;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .project-card img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+
+        .project-card h3 {
+            margin: 0;
+            padding: 0.5rem;
+            font-size: 1.25rem;
+            background: #007acc;
+            color: white;
+        }
+
+        .project-card p {
+            padding: 0.5rem;
+            font-size: 0.9rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background: #f4f4f9;
+            font-size: 0.85rem;
+            color: #555;
+        }
+
+        footer a {
+            color: #007acc;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Your Name's Portfolio</h1>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <div class="container" id="about">
+        <h2>About Me</h2>
+        <p>Welcome to my coding portfolio! I specialize in creating modern and professional websites and applications. Feel free to explore my work below.</p>
+    </div>
+
+    <div class="container" id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <div class="project-card">
+                <img src="https://via.placeholder.com/300" alt="Project 1">
+                <h3>Project 1</h3>
+                <p>A brief description of your project. <a href="#">View More</a></p>
+            </div>
+            <div class="project-card">
+                <img src="https://via.placeholder.com/300" alt="Project 2">
+                <h3>Project 2</h3>
+                <p>A brief description of your project. <a href="#">View More</a></p>
+            </div>
+            <div class="project-card">
+                <img src="https://via.placeholder.com/300" alt="Project 3">
+                <h3>Project 3</h3>
+                <p>A brief description of your project. <a href="#">View More</a></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container" id="contact">
+        <h2>Contact</h2>
+        <p>If you'd like to work together, feel free to <a href="">reach out</a>.</p>
+    </div>
+
+    <footer>
+        &copy; 2024 Mark Smith. Hosted on <a href="https://marksmith2151996.github.io/Portfolio-Website-/">GitHub Pages</a>.
+    </footer>
+</body>
+</html>
