@@ -3,140 +3,108 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-   
-        }
-
-        header {
-            background: #007acc;
-            color: white;
-            padding: 1rem 2rem;
-            text-align: center;
-        }
-
-        header h1 {
-            margin: 0;
-            font-size: 2.5rem;
-        }
-
-        nav {
-            display: flex;
-            justify-content: center;
-            gap: 1.5rem;
-            margin-top: 0.5rem;
-        }
-
-        nav a {
-            text-decoration: none;
-            color: white;
-            font-weight: bold;
-        }
-
-        .container {
-            max-width: 1100px;
-            margin: 2rem auto;
-            padding: 1rem;
-            background: white;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        .project {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 1rem;
-        }
-
-        .project-card {
-            flex: 1 1 calc(33.333% - 1rem);
-            min-width: 200px;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            overflow: hidden;
-            transition: transform 0.2s;
-        }
-
-        .project-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-        }
-
-        .project-card img {
-            width: 100%;
-            height: 150px;
-            object-fit: cover;
-        }
-
-        .project-card h3 {
-            margin: 0;
-            padding: 0.5rem;
-            font-size: 1.25rem;
-            background: #007acc;
-            color: white;
-        }
-
-        .project-card p {
-            padding: 0.5rem;
-            font-size: 0.9rem;
-        }
-
-        footer {
-            text-align: center;
-            padding: 1rem;
-            background: #f4f4f9;
-            font-size: 0.85rem;
-            color: #555;
-        }
-
-        footer a {
-            color: #007acc;
-            text-decoration: none;
-        }
-    </style>
+    <title>Coder's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
     <header>
-        <h1>Your Name's Portfolio</h1>
+        <div class="logo">Coder's Portfolio</div>
         <nav>
-            <a href="#about">About</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
+            <ul>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#settings">Settings</a></li>
+            </ul>
         </nav>
     </header>
 
-    <div class="container" id="about">
-        <h2>About Me</h2>
-        <p>Welcome to my coding portfolio! I specialize in creating modern and professional websites and applications. Feel free to explore my work below.</p>
-    </div>
+    <section id="projects" class="section">
+        <h2>My Projects</h2>
+        <div class="project-container">
+            <!-- Project 1 -->
+            <div class="project-card">
+                <div class="project-image" style="background-image: url('project1.jpg');"></div>
+                <div class="project-info">
+                    <h3>Project 1 Title</h3>
+                    <p>Short description of Project 1.</p>
+                    <a href="https://project1-link.com" target="_blank" class="project-link">View Project</a>
+                </div>
+            </div>
 
-    <div class="container" id="projects">
-        <h2>Projects</h2>
-        <div class="project">
+            <!-- Project 2 -->
             <div class="project-card">
-                <img src="https://via.placeholder.com/300" alt="Project 1">
-                <h3>Project 1</h3>
-                <p>A brief description of your project. <a href="#">View More</a></p>
+                <div class="project-image" style="background-image: url('project2.jpg');"></div>
+                <div class="project-info">
+                    <h3>Project 2 Title</h3>
+                    <p>Short description of Project 2.</p>
+                    <a href="https://project2-link.com" target="_blank" class="project-link">View Project</a>
+                </div>
             </div>
+
+            <!-- Project 3 -->
             <div class="project-card">
-                <img src="https://via.placeholder.com/300" alt="Project 2">
-                <h3>Project 2</h3>
-                <p>A brief description of your project. <a href="#">View More</a></p>
+                <div class="project-image" style="background-image: url('project3.jpg');"></div>
+                <div class="project-info">
+                    <h3>Project 3 Title</h3>
+                    <p>Short description of Project 3.</p>
+                    <a href="https://project3-link.com" target="_blank" class="project-link">View Project</a>
+                </div>
             </div>
+
+            <!-- Project 4 -->
             <div class="project-card">
-                <img src="https://via.placeholder.com/300" alt="Project 3">
-                <h3>Project 3</h3>
-                <p>A brief description of your project. <a href="#">View More</a></p>
+                <div class="project-image" style="background-image: url('project4.jpg');"></div>
+                <div class="project-info">
+                    <h3>Project 4 Title</h3>
+                    <p>Short description of Project 4.</p>
+                    <a href="https://project4-link.com" target="_blank" class="project-link">View Project</a>
+                </div>
             </div>
+
+            <!-- Project 5 -->
+            <div class="project-card">
+                <div class="project-image" style="background-image: url('project5.jpg');"></div>
+                <div class="project-info">
+                    <h3>Project 5 Title</h3>
+                    <p>Short description of Project 5.</p>
+                    <a href="https://project5-link.com" target="_blank" class="project-link">View Project</a>
+                </div>
+            </div>
+
+            <!-- Project 6 -->
+            <div class="project-card">
+                <div class="project-image" style="background-image: url('project6.jpg');"></div>
+                <div class="project-info">
+                    <h3>Project 6 Title</h3>
+                    <p>Short description of Project 6.</p>
+                    <a href="https://project6-link.com" target="_blank" class="project-link">View Project</a>
+                </div>
+            </div>
+
         </div>
-    </div>
+    </section>
 
-    <div class="container" id="contact">
-        <h2>Contact</h2>
-        <p>If you'd like to work together, feel free to <a href="">reach out</a>.</p>
-    </div>
+    <section id="contact" class="section">
+        <h2>Contact Me</h2>
+        <form id="contact-form">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <section id="settings" class="section">
+        <h2>Settings</h2>
+        <label for="theme-switch">Dark Mode:</label>
+        <input type="checkbox" id="theme-switch">
+    </section>
 
     <footer>
-        &copy; 2024 Mark Smith. Hosted on <a href="https://marksmith2151996.github.io/Portfolio-Website-/">GitHub Pages</a>.
+        <p>&copy; 2024 Coder's Portfolio</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
