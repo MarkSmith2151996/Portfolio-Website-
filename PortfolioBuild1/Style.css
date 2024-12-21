@@ -69,7 +69,7 @@ nav ul li a:hover {
 }
 
 .project-card {
-    flex: 0 0 300px;
+    flex: 0 0 400px; /* Increased width for wider images */
     margin: 0 1em;
     background-color: #222;
     border-radius: 10px;
@@ -86,7 +86,7 @@ nav ul li a:hover {
 .project-image {
     background-size: cover;
     background-position: center;
-    height: 200px;
+    height: 250px; /* Increased height for proportional scaling */
     width: 100%;
 }
 
