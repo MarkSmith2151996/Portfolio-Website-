@@ -9,7 +9,7 @@ body {
     background-color: #1e1e1e;
     color: #e0e0e0;
     transition: background-color 0.3s, color 0.3s;
-    overflow-x: auto;
+    overflow-x: hidden;
 }
 
 header {
@@ -59,21 +59,28 @@ nav ul li a:hover {
 
 .project-carousel {
     position: relative;
-    overflow: auto;
+    overflow: hidden;
     margin: 2em 0;
 }
 
 .project-container {
     display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    gap: 16;
+    scrollbar-width: none;
     transition: transform 0.5s ease-in-out;
+}
+   .project-container::-webkit-scrollbar {
+    display: none;  
 }
 
 .project-card {
-    flex: 0 0 400px; /* Increased width for wider images */
+    flex: 0 0 300px;
     margin: 0 1em;
     background-color: #222;
     border-radius: 10px;
-    overflow: auto;
+    overflow: hidden;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease-in-out;
     cursor: pointer;
@@ -86,7 +93,7 @@ nav ul li a:hover {
 .project-image {
     background-size: cover;
     background-position: center;
-    height: 250px; /* Increased height for proportional scaling */
+    height: 200px;
     width: 100%;
 }
 
